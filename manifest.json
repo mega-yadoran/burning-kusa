@@ -1,0 +1,16 @@
+{
+  "name": "草燃ゆる",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "草をクリックすると怪獣が燃やしてくれます",
+  "content_scripts": [{
+    "matches": ["https://twitter.com/*"],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "web_accessible_resources": [{
+    "resources": ["*.gif"],
+    "matches": ["https://twitter.com/*"]
+  }]
+}
